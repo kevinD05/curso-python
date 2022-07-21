@@ -25,6 +25,9 @@
    # for edad in edades:
        #3 print(usuario, edades)
 
+import re
+
+
 def miFuncion():
     print('mi primera funcion!')
 
@@ -43,4 +46,33 @@ def nombreCompleto(apellido, nombre):
 def nombrecompleto2(**kwargs):
     print(kwargs['nombre'], kwargs['apellido'])
 
-nombrecompleto2(nombre= 'chanchito', apellido = 'feliz')
+#nombrecompleto2(nombre= 'chanchito', apellido = 'feliz')
+
+def miFuncion2(argumento = 'chanchito'):
+    print(argumento)
+
+#   miFuncion2('Batman')
+# miFuncion2()
+
+def miFuncionlista(lista):
+    for el in lista:
+        print(el)
+
+# miFuncionlista(['chanchito','feliz'])
+
+def concatenaNombres(lista):
+    i = ""
+    for el in lista:
+        i = i + el + ''
+    return
+
+#nombres = concatenaNombres(['chanchito','feliz'])
+#print(nombres)
+
+def recurcion(i):
+    if (i < 1 ):
+        return
+    print(i)
+    recurcion(i - 1)
+
+recurcion(6)
